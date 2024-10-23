@@ -8,4 +8,6 @@ class Assets {
       "${_baseImage}spalshscreen-background-1.png";
   static const splashScreenBackground2 =
       "${_baseImage}spalshscreen-background-2.png";
+  static const flagIndonesia = "${_baseImage}flag-indoensia.svg";
+  static const flagEnglish = "${_baseImage}flag-english.svg";
 }

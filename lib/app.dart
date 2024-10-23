@@ -15,6 +15,20 @@ class App extends StatefulWidget {
 
 class AppState extends State<App> {
   ThemeType themeType = ThemeType.light;
+  Locale locale = const Locale('id', 'ID');
+
+  @override
+  void initState() {
+    super.initState();
+    setLocale(locale);
+  }
+
+  void setLocale(Locale value) {
+    setState(() {
+      locale = value;
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     // layout potrait only
