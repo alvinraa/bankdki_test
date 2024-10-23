@@ -75,7 +75,7 @@ class _OpeningPageState extends State<OpeningPage>
               children: [
                 const Spacer(),
                 Image.asset(
-                  Assets.splashScreen,
+                  Assets.jakonepay,
                 ),
                 const Spacer(),
                 Padding(

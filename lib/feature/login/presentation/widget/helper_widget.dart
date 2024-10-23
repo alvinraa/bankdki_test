@@ -6,6 +6,8 @@ class HelperWidget extends StatelessWidget {
   @override
   // support bygpt
   Widget build(BuildContext context) {
+    List<Color> gradientColor = const [Color(0xFFFE654D), Color(0xFFFE654D)];
+
     return GestureDetector(
       onTap: () {},
       child: Stack(
@@ -17,8 +19,12 @@ class HelperWidget extends StatelessWidget {
             width: 80,
             height: 70,
             decoration: BoxDecoration(
-              color: const Color(0xFFFF7E30),
               borderRadius: BorderRadius.circular(50),
+              gradient: LinearGradient(
+                colors: gradientColor,
+                begin: Alignment.topCenter,
+                end: Alignment.bottomCenter,
+              ),
             ),
             child: const Icon(
               Icons.no_crash_outlined, // Placeholder for the police car icon
@@ -34,7 +40,13 @@ class HelperWidget extends StatelessWidget {
               child: Container(
                 width: 20,
                 height: 20,
-                color: const Color(0xFFFF7E30),
+                decoration: BoxDecoration(
+                  gradient: LinearGradient(
+                    colors: gradientColor,
+                    begin: Alignment.topCenter,
+                    end: Alignment.bottomCenter,
+                  ),
+                ),
               ),
             ),
           ),

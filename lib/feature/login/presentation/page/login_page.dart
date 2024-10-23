@@ -140,7 +140,7 @@ class _LoginPageState extends State<LoginPage> {
                           },
                           errorBuilder: (context, error, stackTrace) {
                             return Image.network(
-                              'https://placehold.co/600x400?text=No+Image',
+                              'https://placehold.co/600x400',
                               fit: BoxFit.cover,
                               height: 300,
                               width: 140,
@@ -201,7 +201,7 @@ class _LoginPageState extends State<LoginPage> {
           DefaultButton(
             height: 50,
             onPressed: () {
-              navigatorKey.currentState?.pushReplacementNamed(
+              navigatorKey.currentState?.pushNamed(
                 Routes.homePage,
               );
             },
@@ -230,7 +230,7 @@ class _LoginPageState extends State<LoginPage> {
               borderRadius: BorderRadius.circular(25),
               child: OutlinedButton(
                 onPressed: () {
-                  navigatorKey.currentState?.pushReplacementNamed(
+                  navigatorKey.currentState?.pushNamed(
                     Routes.homePage,
                   );
                 },
